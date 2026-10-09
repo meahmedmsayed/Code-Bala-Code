@@ -34,6 +34,7 @@
 
 **لازم ترخيص تجاري.** تواصل: 
 meahmedm.sayed@gmail.com
+
 ### 📦 المحتويات
 
 - `CodeBalaCode.exe` - البرنامج المحمي (مشفر)
