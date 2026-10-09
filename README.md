@@ -33,7 +33,7 @@
 - عايز تبيعه لطلابك
 
 **لازم ترخيص تجاري.** تواصل: 
-meahmedm.sayed@gmail.com
+codebelacode@gmail.com
 
 ### 📦 المحتويات
 
