@@ -1,0 +1,8 @@
+<!-- Protected by Code Bala Code - ECB0CAD5FE2AADEB - All Rights Reserved - 2026-10-08 23:21:40 -->\n
+<!DOCTYPE html><html dir="rtl"><head><meta charset="utf-8"><title>شات بوت</title>
+<style>body{background:#111;color:#fff;font-family:sans-serif;display:flex;justify-content:center;padding:30px}.chat{width:400px;background:#222;border-radius:15px;padding:20px}#msgs{height:300px;overflow:auto;margin-bottom:10px}.msg{background:#333;margin:5px;padding:10px;border-radius:10px}.user{background:#C6FF00;color:#000;text-align:left}input{width:70%;padding:10px;border-radius:8px;border:none}button{padding:10px;background:#C6FF00;border:none;border-radius:8px;cursor:pointer}</style>
+</head><body><div class="chat"><h2 style="color:#C6FF00">بوت الورشة 🤖</h2><div id="msgs"><div class="msg">اهلا يا معلم! اسألني اي حاجة</div></div><input id="inp" placeholder="اكتب هنا..."><button onclick="send()">ابعت</button></div>
+<script>
+function send(){let i=document.getElementById('inp');let m=document.getElementById('msgs');if(!i.value)return;
+m.innerHTML+=`<div class="msg user">${i.value}</div>`;let r="الورشة بتقولك: سؤال جامد!";if(i.value.includes('عامل ايه'))r='زي الفل يا معلم!';m.innerHTML+=`<div class="msg">${r}</div>`;i.value='';m.scrollTop=m.scrollHeight;}
+</script></body></html>

@@ -1,0 +1,10 @@
+<!-- Protected by Code Bala Code - ECB0CAD5FE2AADEB - All Rights Reserved - 2026-10-08 23:21:40 -->\n
+<!DOCTYPE html><html dir="rtl"><head><meta charset="utf-8"><title>XO</title>
+<style>body{background:#111;color:#C6FF00;text-align:center;font-family:sans-serif} .board{display:grid;grid-template-columns:repeat(3,100px);gap:10px;justify-content:center;margin:20px auto}.cell{width:100px;height:100px;background:#222;font-size:50px;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px}</style>
+</head><body><h1>لعبة XO - الورشة</h1><div class="board" id="board"></div><h2 id="status">دور X</h2><button onclick="reset()" style="padding:10px 20px;background:#C6FF00;border:none;border-radius:8px">اعادة</button>
+<script>
+let b=document.getElementById('board'),s=document.getElementById('status'),turn='X',cells=Array(9).fill('');
+function draw(){b.innerHTML='';cells.forEach((c,i)=>{let d=document.createElement('div');d.className='cell';d.textContent=c;d.onclick=()=>{if(cells[i]==''){cells[i]=turn;turn=turn=='X'?'O':'X';s.textContent='دور '+turn;draw();check()}};b.appendChild(d);});}
+function check(){let w=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];for(let a of w){if(cells[a[0]]&&cells[a[0]]==cells[a[1]]&&cells[a[0]]==cells[a[2]]){s.textContent='كسب '+cells[a[0]]+' يا بطل!';return;}}}
+function reset(){cells=Array(9).fill('');turn='X';s.textContent='دور X';draw();}draw();
+</script></body></html>

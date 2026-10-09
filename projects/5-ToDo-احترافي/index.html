@@ -1,0 +1,7 @@
+<!-- Protected by Code Bala Code - ECB0CAD5FE2AADEB - All Rights Reserved - 2026-10-08 23:21:40 -->\n
+<!DOCTYPE html><html dir="rtl"><head><meta charset="utf-8"><title>ToDo</title>
+<style>body{background:#121212;color:white;font-family:sans-serif;display:flex;justify-content:center;padding:30px}.app{width:400px;background:#1e1e1e;padding:20px;border-radius:15px}input{width:70%;padding:10px;border-radius:8px;border:none}button{padding:10px;background:#C6FF00;border:none;border-radius:8px}li{list-style:none;background:#2a2a2a;margin:8px 0;padding:10px;border-radius:8px;display:flex;justify-content:space-between}</style>
+</head><body><div class="app"><h2 style="color:#C6FF00">مهامي - الورشة</h2><input id="inp" placeholder="مهمة جديدة..."><button onclick="add()">ضيف</button><ul id="list"></ul></div>
+<script>
+function add(){let v=document.getElementById('inp').value;if(!v)return;let l=document.getElementById('list');let li=document.createElement('li');li.innerHTML=`${v} <span onclick="this.parentElement.remove()" style="cursor:pointer;color:red">X</span>`;l.appendChild(li);document.getElementById('inp').value='';}
+</script></body></html>
